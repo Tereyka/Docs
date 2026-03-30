@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архив вуза</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="sidebar__nav" aria-label="Боковая навигация">
+            <ul class="sidebar__list">
+                <li class="sidebar__item sidebar__item--active">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon" aria-hidden="true">
+                            <img src="assets/icons/home.png" alt="">
+                        </span>
+                        <span class="sidebar__text">Главная</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon" aria-hidden="true">
+                            <img src="assets/icons/docs.png" alt="">
+                        </span>
+                        <span class="sidebar__text">Документы</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon" aria-hidden="true">
+                            <img src="assets/icons/rules.png" alt="">
+                        </span>
+                        <span class="sidebar__text">Правила хранения</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon" aria-hidden="true">
+                            <img src="assets/icons/users.png" alt="">
+                        </span>
+                        <span class="sidebar__text">Пользователи</span>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link">
+                        <span class="sidebar__icon" aria-hidden="true">
+                            <img src="assets/icons/log.png" alt="">
+                        </span>
+                        <span class="sidebar__text">Журнал действий</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <nav class="topbar__nav">
+            <h1 class="topbar__title">Главная</h1>
+
+            <div class="topbar__right">
+                <a href="#" class="topbar__icon-button" aria-label="Уведомления">
+                    <img src="assets/icons/bell.png" alt="">
+                </a>
+
+                <a href="#" class="topbar__action">
+                    <span class="topbar__action-icon">
+                        <img src="assets/icons/add.png" alt="">
+                    </span>
+                    <span class="topbar__action-text">Добавить документ</span>
+                </a>
+
+                <div class="topbar__profile">
+                    <button class="topbar__profile-button" type="button">
+                        <span class="topbar__avatar">
+                            <img src="assets/images/avatar.jpg" alt="Профиль">
+                        </span>
+                        <span class="topbar__username">Крылов Дмитрий</span>
+                        <span class="topbar__arrow">
+                            <img src="assets/icons/arrow-down.png" alt="">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content">
+            <div class="main-content__left">
+                <h2 class="welcome">Добро пожаловать, Дмитрий</h2>
+                <section class="summary">
+                    <ul class="summary__list">
+                        <li class="summary__item">
+                            <p class="summary__title">Общее количество</p>
+                            <div class="summary__value-container">
+                                <span class="summary__icon">
+                                    <img src="assets/icons/loading-docs.png">
+                                </span>
+                                <span class="summary__value">1247</span>
+                            </div>
+                        </li>
+                        <li class="summary__item">
+                            <p class="summary__title">В процессе обработки</p>
+                            <div class="summary__value-container">
+                                <span class="summary__icon">
+                                    <img src="assets/icons/loading-arrow.png">
+                                </span>
+                                <span class="summary__value">4</span>
+                            </div>
+                        </li>
+                        <li class="summary__item">
+                            <p class="summary__title">Ошибки обработки</p>
+                            <div class="summary__value-container">
+                                <span class="summary__icon">
+                                    <img src="assets/icons/error.png">
+                                </span>
+                                <span class="summary__value">2</span>
+                            </div>
+                        </li>
+                        <li class="summary__item">
+                            <p class="summary__title">Уведомления</p>
+                            <div class="summary__value-container">
+                                <span class="summary__icon">
+                                    <img src="assets/icons/bell.png">
+                                </span>
+                                <span class="summary__value">3</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="recent-documents">
+                    <h2 class="recent-documents__title">Последние загруженные документы</h2>
+                    <table class="recent-documents__table table">
+                        <thead class="table__head">
+                            <tr class="table__row">
+                                <th scope="col" class="table__cell--header">Заголовок</th>
+                                <th scope="col" class="table__cell--header">Категория</th>
+                                <th scope="col" class="table__cell--header">Дата загрузки</th>
+                                <th scope="col" class="table__cell--header table__status">Статус</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                <td class="table__cell table__status"><span class="status status--processing">Обработка</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--error">Ошибка</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--error">Ошибка</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--queue">В очереди</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--processing">Обработка</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--processing">Обработка</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Приказ №45 о зачислении</td>
+                                <td class="table__cell">Приказы</td>
+                                <td class="table__cell">21.03.2026</td>
+                                 <td class="table__cell table__status"><span class="status status--archive">В архиве</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="main-content__right">
+                <section class="notifications">
+                    <h2 class="notifications__title">Уведомления</h2>
+                    <span class="notificationss__detail">Показать все</span>
+                    <span class="notifications__arrow">
+                        <img src="assets/icons/arrow-right.png" alt="">
+                    </span>
+                    <ul class="notifications__list">
+                        <li class="notifications__item notifications__item--processing">
+                            <span class="notifications__icon">
+                                <img src="assets/icons/loading-arrow.png" alt="">
+                            </span>
+                            <p class="notifications__text">
+                                Документ «Приказ №45 о зачислении» ожидает проверку OCR
+                            </p>
+                        </li>
+
+                        <li class="notifications__item notifications__item--success">
+                            <span class="notifications__icon">
+                                <img src="assets/icons/check.png" alt="">
+                            </span>
+                            <p class="notifications__text">
+                                Документ «Отчет по научной работе кафедры» успешно обработан
+                            </p>
+                        </li>
+
+                        <li class="notifications__item notifications__item--error">
+                            <span class="notifications__icon">
+                                <img src="assets/icons/error.png" alt="">
+                            </span>
+                            <p class="notifications__text">
+                                Обработка документа «Личное дело Иванов Д.А.» завершилась с ошибкой
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <!-- <section class="statistics">
+                    <div class="statistics__header">
+                        <h2 class="statistics__title">Статистика обработки документов</h2>
+
+                        <button class="statistics__period" type="button">
+                            <span class="statistics__period-text">За 30 дней</span>
+                            <span class="statistics__period-icon" aria-hidden="true">
+                                <img src="assets/icons/arrow-down-grey.png" alt="">
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="statistics__content">
+                        <div class="statistics__top">
+                            <ul class="statistics__legend">
+                                <li class="statistics__legend-item">
+                                    <span class="statistics__legend-marker statistics__legend-marker--archive"></span>
+                                    <span class="statistics__legend-text">Архивировано</span>
+                                </li>
+                                <li class="statistics__legend-item">
+                                    <span
+                                        class="statistics__legend-marker statistics__legend-marker--processing"></span>
+                                    <span class="statistics__legend-text">В обработке</span>
+                                </li>
+                                <li class="statistics__legend-item">
+                                    <span class="statistics__legend-marker statistics__legend-marker--queue"></span>
+                                    <span class="statistics__legend-text">В очереди</span>
+                                </li>
+                                <li class="statistics__legend-item">
+                                    <span class="statistics__legend-marker statistics__legend-marker--error"></span>
+                                    <span class="statistics__legend-text">Ошибки</span>
+                                </li>
+                            </ul>
+
+                            <div class="statistics__donut-chart">
+                                <canvas id="donutChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="statistics__chart">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                </section> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<html lang="ru">
+
+</html>
