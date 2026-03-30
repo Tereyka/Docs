@@ -383,6 +383,7 @@ body {
     justify-content: space-between;
     padding-block: 15px;
     border-bottom: 1px solid #EFEFF1;
+    gap:20px;
 }
 
 .notifications__title {
