@@ -301,7 +301,8 @@ body {
 
 .summary__value-container {
     display: flex;
-    gap: 3px;
+    gap: 8px;
+    align-items: center;
 }
 
 .summary__value {
