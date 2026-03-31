@@ -1,0 +1,22 @@
+.main-content {
+    flex-direction: column;
+    gap:30px;
+}
+
+.documents-controls {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.documents-controls__search {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.filters__list {
+    display: flex;
+    gap:60px;
+
+}
