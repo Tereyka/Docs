@@ -1,0 +1,50 @@
+.topbar__nav {
+    background-color: var(--color-nav-text);
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 40px;
+}
+
+
+.topbar__title {
+    font-size: 32px;
+    font-weight: 700;
+    color:var(--color-accent);
+}
+
+.topbar__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 530px;
+}
+
+.topbar__action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.topbar__action-text {
+    color: var(--color-accent);
+    font-weight: 400;
+}
+
+.topbar__profile-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border: none;
+    background-color: var(--color-bg-second);
+}
+
+.topbar__username {
+    color: var(--color-accent);
+    font-weight: 700;
+    font-size: 18px;
+}
